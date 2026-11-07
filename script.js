@@ -74,7 +74,7 @@ function inputNumber(number) {
     justCalculated = false;
   } else if (currentValue === "0") {
     currentValue = number;
-  } else if (currentValue.length < 12) {
+  } else if (currentValue.length < 30) {
     currentValue += number;
   }
 
