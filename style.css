@@ -36,6 +36,8 @@ body {
 
 /* style for the previous calculation */
 .history {
+  white-space: nowrap;
+  overflow: hidden;
   min-height: 20px;
   width: 100%;
   color: #a7a7a7;
@@ -45,6 +47,9 @@ body {
 
 /*main display for the current calculation */
 .display {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
   width: 100%;
   font-size: 42px;
   font-weight: 300;
@@ -63,7 +68,7 @@ body {
 button {
   font-size: 22px;
   transition: all 0.1s ease;
-  min-height: 75px;
+  min-height: 85px;
   border: 0;
   border-radius: 0;
   color: #ffffff;
@@ -71,9 +76,9 @@ button {
 
 }
 
-/* zero button spans 2 columns */
-.zero {
-  grid-column: span 2;
+.backspace {
+  grid-column: 1 / -1;
+  cursor: pointer;
 }
 
 /* Animation when hovered/clicked */
@@ -94,4 +99,5 @@ button:active {
 .operator:hover, .equals:hover {
   background: #e6c386;
 }
+
 
